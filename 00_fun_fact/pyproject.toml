@@ -1,0 +1,21 @@
+[project]
+name = "fun-fact"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "HassanSuhaib71", email = "hassansuhaib71@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-google-genai>=2.0.9",
+    "langgraph>=0.2.71",
+]
+
+[project.scripts]
+00-fun-fact = "fun_fact:main"
+simple_flow = "fun_fact.simple_workflow:run_chain"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
