@@ -1,0 +1,20 @@
+[project]
+name = "router"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "HassanSuhaib71", email = "hassansuhaib71@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=0.2.72",
+]
+
+[project.scripts]
+router = "router:main"
+simple_flow = "router.router_flow:router_call"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
